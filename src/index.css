@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .card-stack {
+    perspective: 1000px;
+  }
+  
+  .swipe-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .swipe-card.swiping {
+    transition: none;
+  }
+}
